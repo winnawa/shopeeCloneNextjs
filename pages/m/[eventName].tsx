@@ -50,7 +50,7 @@ const POST_NOTIFICATION = gql`
 
 
 const SingleEventDetail = ()=>{
-
+    const {updateHadNewNoti, updateNumOfNewNoti, numOfNewNoti} = useNotification();
     const router = useRouter();
     const eventName = router.query.eventName;
     let dataObj = { topics: [""], name: "", imgURL: "", time: "", description: "", } ;
@@ -73,7 +73,7 @@ const SingleEventDetail = ()=>{
         })
     }
     
-    const {updateHadNewNoti, updateNumOfNewNoti, numOfNewNoti} = useNotification();
+   
 
     const subscribeClickedHandler = ()=>{
         if (subscribeState === "Subscribe"){
