@@ -35,7 +35,7 @@ const NotificationBar = ()=>{
         })
         return(
             <>
-                {notificationsArray.length >0 ?  notificationsArray  : "Currently NO Notification"}
+                {notificationsArray.length >0 ?  notificationsArray  : <div>Currently NO Notification</div>}
             </>
         )
     }

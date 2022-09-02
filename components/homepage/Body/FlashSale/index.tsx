@@ -67,21 +67,21 @@ export const paintingArray= [
         price: "123000$",
         imgURL:"https://mymodernmet.com/wp/wp-content/uploads/2021/08/michelangelo-drawing-2.jpeg",
         salePercent : "25%",
-        description  :  "The Pietà is regarded as one of the greatest works of the Renaissance artist Michelangelo Buonarroti. This impressive sculpture is currently placed in Vatican City, at St. Peter’s Basilica. The Pietà is among the initial works of art of the similar theme made by the artist. Cardinal Jean de Billheres commissioned the statue, and this nobleman was a previous representative in Rome. The statue, which was in Carrara marble, was created to the funeral monument of the cardinal, yet it was relocated at St. Peter’s Basilica during the 18th century. It was also the only artwork by Michelangelo that was signed by the artist himself."
+        description  :  "The Pietà is regarded as one of the greatest works of the Renaissance artist Michelangelo Buonarroti. This impressive sculpture is currently placed in Vatican City, at St. Peter's Basilica. The Pietà is among the initial works of art of the similar theme made by the artist. Cardinal Jean de Billheres commissioned the statue, and this nobleman was a previous representative in Rome. The statue, which was in Carrara marble, was created to the funeral monument of the cardinal, yet it was relocated at St. Peter’s Basilica during the 18th century. It was also the only artwork by Michelangelo that was signed by the artist himself."
     },
     {
         name : "The Kiss",
         price: "112000$",
         imgURL:"https://media.timeout.com/images/103166743/750/562/image.jpg",
         salePercent : "10%",
-        description : "The Kiss, Klimt’s most famous painting, was realised between 1907-08, the highpoint of Klimt “Golden Period,” when he painted a number of works in a similar gilded style. The inspiration for his “Golden Phase” was presumably provided by a visit to Ravenna during his travels through Italy in 1903, which introduced him to the world of Byzantine mosaics. For Klimt the flatness of the mosaics and their lack of perspective and depth only enhanced their golden brilliance, and he started to make unprecedented use of gold and silver leaf in his own work. The Kiss is housed in the Austrian Gallery in Vienna’s Upper Belvedere Palace. The painting depicts a couple embracing in a field of flowers. The man is bent over the woman, and she, clinging tightly to him, awaits his kiss. In terms of ornamentation, the male figure is characterized by square and rectangular forms, while for the female, soft lines and floral patterns are dominant.",
+        description : "The Kiss, Klimt 's most famous painting, was realised between 1907-08, the highpoint of Klimt “Golden Period,” when he painted a number of works in a similar gilded style. The inspiration for his “Golden Phase” was presumably provided by a visit to Ravenna during his travels through Italy in 1903, which introduced him to the world of Byzantine mosaics. For Klimt the flatness of the mosaics and their lack of perspective and depth only enhanced their golden brilliance, and he started to make unprecedented use of gold and silver leaf in his own work. The Kiss is housed in the Austrian Gallery in Vienna’s Upper Belvedere Palace. The painting depicts a couple embracing in a field of flowers. The man is bent over the woman, and she, clinging tightly to him, awaits his kiss. In terms of ornamentation, the male figure is characterized by square and rectangular forms, while for the female, soft lines and floral patterns are dominant.",
     },
     {
         name : "Whistler Mother",
         price: "135000$",
         imgURL:"https://media.timeout.com/images/103166741/750/562/image.jpg",
         salePercent : "50%",
-        description : "This artwork is a portrait of James McNeill Whistler’s mother, Anna McNeill Whistler while they were in London in 1871. It was said that James’ model was not able to commit to the job and it was during this time that James decided to do his mother’s portrait. There was a lot of experimentation before the creation of this famous painting. James Whistler wanted his mother to pose for him while standing up but it proved to be too tiresome for her. It was in this painting that Whistler was able to express his style in tonal composition and harmony. At first glance the painting appears simple. However, upon closer inspection the artwork indeed portrays a balance between the different shapes in the picture.",
+        description : "This artwork is a portrait of James McNeill Whistlers mother, Anna McNeill Whistler while they were in London in 1871. It was said that James' model was not able to commit to the job and it was during this time that James decided to do his mother's portrait. There was a lot of experimentation before the creation of this famous painting. James Whistler wanted his mother to pose for him while standing up but it proved to be too tiresome for her. It was in this painting that Whistler was able to express his style in tonal composition and harmony. At first glance the painting appears simple. However, upon closer inspection the artwork indeed portrays a balance between the different shapes in the picture.",
 
     },
     {
@@ -89,7 +89,7 @@ export const paintingArray= [
         price: "186000$",
         imgURL:"https://media.timeout.com/images/103166750/750/562/image.jpg",
         salePercent : "55%",
-        description  :  "Les Demoiselles d’Avignon marks a radical break from traditional composition and perspective in painting. It depicts five naked women composed of flat, splintered planes whose faces were inspired by Iberian sculpture and African masks. The compressed space they inhabit appears to project forward in jagged shards, while a slice of melon in the still life at the bottom of the composition teeters on an upturned tabletop. Picasso unveiled the monumental painting in his Paris studio after months of revision. The Avignon of the work’s title is a reference to a street in Barcelona famed for its brothels."
+        description  :  "Les Demoiselles dAvignon marks a radical break from traditional composition and perspective in painting. It depicts five naked women composed of flat, splintered planes whose faces were inspired by Iberian sculpture and African masks. The compressed space they inhabit appears to project forward in jagged shards, while a slice of melon in the still life at the bottom of the composition teeters on an upturned tabletop. Picasso unveiled the monumental painting in his Paris studio after months of revision. The Avignon of the work's title is a reference to a street in Barcelona famed for its brothels."
     },
 ]
 

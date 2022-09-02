@@ -47,9 +47,9 @@ const SearchBar = () => {
       return false;
     })
 
-    topicsArrayDisplayed = topicsMatchedArray.map((element)=>{
+    topicsArrayDisplayed = topicsMatchedArray.map((element,index)=>{
       return (
-        <SingleTopicContainer onMouseEnter={()=>{updateMouseOnTheRecommendation(true)}} onClick={()=>{updateSearchedTopic(element.content); updateShowTopics(false);  updateMouseOnTheRecommendation(false);}}>
+        <SingleTopicContainer key={index} onMouseEnter={()=>{updateMouseOnTheRecommendation(true)}} onClick={()=>{updateSearchedTopic(element.content); updateShowTopics(false);  updateMouseOnTheRecommendation(false);}}>
           {element.content}
         </SingleTopicContainer>
       )

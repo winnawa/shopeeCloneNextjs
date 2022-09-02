@@ -66,9 +66,9 @@ const SingleEventDetail = ()=>{
         console.log(data);
         dataObj = {...data.getHotEvent};
         console.log(dataObj);
-        topicsArray = dataObj.topics.map((element: string)=>{
+        topicsArray = dataObj.topics.map((element: string, index)=>{
             return (
-                <TopicContainer> {element} </TopicContainer>
+                <TopicContainer key={index}> {element} </TopicContainer>
             )
         })
     }

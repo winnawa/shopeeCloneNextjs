@@ -8,6 +8,7 @@ import { NumOfNewNoti } from "./styled";
 const ClientOption: FunctionComponent<{
         showNotification: ()=>void
     }> = ({showNotification}) =>{
+    const {numOfNewNoti , hadNewNoti} = useNotification();
 
    
     const router = useRouter();
@@ -21,8 +22,7 @@ const ClientOption: FunctionComponent<{
         );
     }
 
-   const {numOfNewNoti , hadNewNoti} = useNotification();
-
+   
     return(
         <div className={styles.container}>
             <div className = {styles.segment} >
