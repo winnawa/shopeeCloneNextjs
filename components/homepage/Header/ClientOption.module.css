@@ -1,0 +1,47 @@
+/* display:"flex", width:"25%", flexWrap: "wrap", justifyContent:"center", borderLeft:"black dashed" */
+
+.container{
+    display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: black dashed;
+    align-items: center;
+}
+
+.segment{
+    display: flex;
+    justify-content: flex-start;
+    width : 44%;
+    height: 40%;
+    border-style: double;
+    border-radius: 39%;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+div.segment {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+div.segment:hover {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width : 1300px) {
+    .segment{
+        font-size: 14px;
+        width: 116px;
+        height: 46px;
+    }
+}
+@media screen and (max-width : 1150px) {
+    .container{
+        display: none;
+    }
+    
+    
+}

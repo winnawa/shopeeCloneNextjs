@@ -1,0 +1,54 @@
+
+.container{
+    display: flex;
+    border-right-color: black;
+    border-right-style: dashed;
+    width: 25%;
+    align-items: center;
+   
+}
+
+.symbol {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNxuNLdc_gaDk0lKNQxkBBtv_Qe1VER_lvQ&usqp=CAU");
+    background-repeat:no-repeat;
+    background-size: cover ;
+    border : black solid;
+    width:50%;
+    height:90%;
+    margin-left: 0.8rem;
+}
+
+.word{
+    font-weight: bold;
+    font-style: italic;
+    cursor : pointer;
+    font-size: 150%;
+   
+}
+
+
+@media screen and (max-width : 1000px){
+    .container{
+        justify-content: center;
+    }
+    .symbol{
+        display: none;
+    }
+}
+@media screen and (max-width : 950px){
+    .container{
+        justify-content: left;
+        padding-left: 5%;
+    }
+}
+@media screen and (max-width : 600px){
+    .container{
+        justify-content: left;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width : 1200px) {
+    .word{
+        font-size: 22px !important;
+    }
+}
