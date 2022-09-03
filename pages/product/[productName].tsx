@@ -9,9 +9,13 @@ const SingleProductDetail = ()=>{
 
     const router = useRouter();
     const productName = router.query.productName;
-    const filteredArray = paintingArray.filter((element)=>{if (element.name === productName) return element});
-    console.log(filteredArray);
-    const obj = filteredArray[0];
+    let obj = {
+        imgURL:"",
+        name:"",
+        description:""} 
+   
+    const filteredArray: {imgURL : string, name : string, description: string}[] = paintingArray.filter((element)=>{if (element.name === productName) return element});
+     if (filteredArray[0]) {obj = filteredArray[0];} 
 
 
 

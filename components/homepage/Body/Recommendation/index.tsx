@@ -113,7 +113,7 @@ const Recommendation = ()=>{
                 <ImgOfSingleItem imgURL={element.imgURL} />
                 <div style={{marginLeft:"5px",marginRight:"5px",marginTop:"10px"}}>
                     <NameOfSingleItem>{element.itemName}</NameOfSingleItem>
-                    <AdditionalSale onAdditionalSale={element.onAdditionalSale}>{element.onAdditionalSale ? element.additionalSale : ""}</AdditionalSale>
+                    <AdditionalSale isOnAdditionalSale={element.onAdditionalSale}>{element.onAdditionalSale ? element.additionalSale : ""}</AdditionalSale>
                     <PriceOfSingleItem>{element.price}</PriceOfSingleItem>  
                     <PositionOfSoldAmount>
                         <SoldAmountOfSingleItem>{element.soldAmount}</SoldAmountOfSingleItem>

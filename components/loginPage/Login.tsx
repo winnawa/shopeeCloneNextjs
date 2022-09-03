@@ -1,7 +1,7 @@
 import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth"
 import { app } from "../../src/firebase/firebase"
 import React, { useEffect, useState } from "react";
-//import {Parallax,ParallaxLayer} from "@react-spring/parallax"
+// import {Parallax,ParallaxLayer} from "@react-spring/parallax"
 import { Button, FlexContainer, ImgContainer, TextBackGroundAndSizeColorBox, TextCenterBox, TextContainer } from "./styled";
 import { useRouter } from "next/router";
 const LoginComponent = ()=>{
@@ -61,17 +61,15 @@ const LoginComponent = ()=>{
             
                 <TextCenterBox>
                     <TextBackGroundAndSizeColorBox>
-                        {/* {!loading && <TextContainer appear={appear}>  Welcome to our website</TextContainer>}
-                        {!loading && <TextContainer appear={appear}> Lets take a tour !!!</TextContainer>} */}
+                        
                         <TextContainer >  Welcome to our website</TextContainer>
                         <TextContainer > Lets take a tour !!!</TextContainer>
                     </TextBackGroundAndSizeColorBox>    
                     <FlexContainer>
                         <Button onClick={signInWithGoogle}>Sign In</Button>
-                        {/* <Button onClick={()=>{updateAppear(!appear)}}>F</Button> */}
+                        
                     </FlexContainer>      
                 </TextCenterBox>
-                
             </ImgContainer>
         </React.Fragment>
     )

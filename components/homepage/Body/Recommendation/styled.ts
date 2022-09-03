@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-interface SingleItemProps{
-    imgURL? : String;
-    onAdditionalSale? : Boolean;
+interface ImgProps{
+    imgURL : String;
+}
+interface SaleProps{
+    isOnAdditionalSale : Boolean;
 }
 
 
@@ -40,7 +42,7 @@ export const RecommendationHeader = styled.div`
     font-size : 20px;
 `
 
-export const ImgOfSingleItem = styled.div<SingleItemProps>`
+export const ImgOfSingleItem = styled.div<ImgProps>`
     width : 100%;
     height : 60%;
     background-image : ${(props)=>(`url(${props.imgURL});`)}
@@ -54,8 +56,8 @@ export const NameOfSingleItem = styled.div`
     overflow  : hidden;
 `
 
-export const AdditionalSale = styled.div<SingleItemProps>`
-    ${(props)=>(props.onAdditionalSale && "background-color : orange;")}
+export const AdditionalSale = styled.div<SaleProps>`
+    ${(props)=>(props.isOnAdditionalSale && "background-color : orange;")}
     height : 20px;
     width : 20%;
     margin-bottom :  5px;
