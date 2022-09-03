@@ -160,8 +160,8 @@ const Category = ()=>{
         }   
     })
 
-    const leftButton = '<';
-    const rightButton = '>';
+    const leftButton = "<";
+    const rightButton = ">";
     return (
         <CategoryContainer>
             <LeftButton onClick={leftClickedHandler}> {leftButton} </LeftButton>
