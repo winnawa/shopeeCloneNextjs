@@ -1,11 +1,13 @@
 import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth"
 import { app } from "../../src/firebase/firebase"
-import React from "react";
-import { ParallaxLayer, Parallax } from "@react-spring/parallax";
+import React, { useEffect, useState } from "react";
+import {Parallax,ParallaxLayer} from "@react-spring/parallax"
 import { Button, FlexContainer, ImgContainer, TextBackGroundAndSizeColorBox, TextCenterBox, TextContainer } from "./styled";
 import { useRouter } from "next/router";
 const LoginComponent = ()=>{
     const router = useRouter();
+    //const [appear,updateAppear] = useState(false);
+    //const [loading, upadateLoading] = useState(true)
 
     const provider = new GoogleAuthProvider();
     const auth = getAuth(app);
@@ -24,9 +26,20 @@ const LoginComponent = ()=>{
         );
     }
 
+
+    // useEffect(()=>{
+    //     let timer = setTimeout(()=>{
+    //         updateAppear(true);
+    //     },1000)  
+    //     return ()=>{
+    //         clearTimeout(timer)
+            
+    //     }
+    // },[])
+
     return(
-        <>
-            <Parallax pages={1.5} >
+        <React.Fragment>
+            {/* <Parallax pages={1.5} >
                 <ParallaxLayer offset={0} factor={1.5} speed={0.2} >    
                     <ImgContainer imgURL="https://b2h3x3f6.stackpathcdn.com/assets/landing/img/gallery/2.jpg">
                     </ImgContainer>
@@ -43,9 +56,24 @@ const LoginComponent = ()=>{
                         <Button onClick={signInWithGoogle}>Sign In</Button>
                     </FlexContainer>
                 </ParallaxLayer>
-            </Parallax>
+            </Parallax> */}
+            <ImgContainer imgURL="https://b2h3x3f6.stackpathcdn.com/assets/landing/img/gallery/2.jpg">
             
-        </>
+                <TextCenterBox>
+                    <TextBackGroundAndSizeColorBox>
+                        {/* {!loading && <TextContainer appear={appear}>  Welcome to our website</TextContainer>}
+                        {!loading && <TextContainer appear={appear}> Lets take a tour !!!</TextContainer>} */}
+                        <TextContainer >  Welcome to our website</TextContainer>
+                        <TextContainer > Lets take a tour !!!</TextContainer>
+                    </TextBackGroundAndSizeColorBox>    
+                    <FlexContainer>
+                        <Button onClick={signInWithGoogle}>Sign In</Button>
+                        {/* <Button onClick={()=>{updateAppear(!appear)}}>F</Button> */}
+                    </FlexContainer>      
+                </TextCenterBox>
+                
+            </ImgContainer>
+        </React.Fragment>
     )
 }
 export default LoginComponent;

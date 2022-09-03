@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface LogInProps{
-    imgURL : string
+    imgURL? : string,
+    appear? : boolean
 }
 
 export const ImgContainer = styled.div<LogInProps>`
@@ -10,6 +11,9 @@ export const ImgContainer = styled.div<LogInProps>`
     background-repeat : no-repeat;
     width : 100%;
     height : 1000px;
+    position : relative;
+    display : flex;
+    justify-content :  center;
 `
 
 export const FlexContainer = styled.div`
@@ -37,8 +41,11 @@ export const Button = styled.button`
 
 export const TextCenterBox = styled.div`
     display : flex;
+    flex-direction : column;
     justify-content : center;
     align-items  :  center;
+    position : absolute;
+    top : 400px;
 `
 export const TextBackGroundAndSizeColorBox = styled.div`
     width : 850px;
@@ -49,10 +56,17 @@ export const TextBackGroundAndSizeColorBox = styled.div`
     flex-direction : column;
     border-radius  : 20%;
 `
-export const TextContainer = styled.div`
+export const TextContainer = styled.div<LogInProps>`
     text-align  : justify;
     font-size : xxx-large;
     font-weight :  bold;
     font-family : Helvetica Neue;
+  
+   
 `
+
+//opacity : 0;
+//transition : opacity 5s linear;
+//${(props)=>(props.appear ? "opacity :1;" : "opacity:0")}
+//${(props)=>(props.appear && "opacity :1;" )}
 
