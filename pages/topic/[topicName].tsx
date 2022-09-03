@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import { categoriesArray } from "../../components/homepage/Body/Category"
-import {Parallax,ParallaxLayer} from "@react-spring/parallax"
+//import {Parallax,ParallaxLayer} from "@react-spring/parallax"
 import { BackgroundImgCenterBox, BackgroundImgContainer, SingleTopicPageContainer, TextBackGroundAndSizeColorBox, TextCenterBox, TextContainer } from "../../components/topicPage/styled";
 import Header from "../../components/homepage/Header";
 const SingleTopicComponent = ()=>{
