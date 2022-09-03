@@ -11,7 +11,7 @@ export const paintingArray= [
         imgURL: "https://static.wixstatic.com/media/a04ebf_d494b857b9c84eadb1386c89dc42a858~mv2.jpg/v1/fill/w_700,h_420,al_c,q_90/a04ebf_d494b857b9c84eadb1386c89dc42a858~mv2.jpg",
         salePercent : "55%",
         description : "This painting by an unknown artist is based on Michelangelo's drawing The Dream (Courtauld Institute, London). Michelangelo's presentation drawings were made as gifts for his friends and were always intended as self-sufficient works of art. The Dream is probably one of an important group of such drawings that Michelangelo gave to the young Roman nobleman Tommaso Cavalieri in 15323. The art historian Vasari used the title The Dream (Il Sogno) in his 1568 edition of The Lives of the Artists. There is no other contemporary document to explain the composition's meaning, but it appears to explore contemporary ideas about the ascent of the soul to the divine aided by beauty. The angel awakens or animates the perfect youth, drawing him away from the illusions and deceits of the earthly realm of sin to a new spiritual life in harmony with the will of God. Representations of the seven deadly sins are seen in the background.",
-    },
+    },                                                                                             
     {
         name : "The Windmill",
         price: "56000$",
