@@ -35,7 +35,7 @@ const LoginComponent = ()=>{
                     <TextCenterBox>
                         <TextBackGroundAndSizeColorBox>
                             <TextContainer>  Welcome to our website</TextContainer>
-                            <TextContainer> Let"s take a tour !!!</TextContainer>
+                            <TextContainer> Lets &apos t ake a tour !!!</TextContainer>
                         </TextBackGroundAndSizeColorBox>
                       
                     </TextCenterBox>

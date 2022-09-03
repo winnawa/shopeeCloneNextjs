@@ -19,7 +19,7 @@ const NotificationBar = ()=>{
     const  {loading,error,data} = useQuery(GET_NOTIS)
     
     //const [reRender,updateRerender] = useState(false);
-    if (error) return (<>{`Error : ${error}`}</>)
+    if (error) return (<div>{`Error : ${error}`}</div>)
     if (!loading){
         console.log(data);
         const dataObj = data.getNotification;
