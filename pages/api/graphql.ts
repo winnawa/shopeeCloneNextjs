@@ -1,13 +1,13 @@
-import {ApolloServer} from 'apollo-server'
-import {typeDefs} from '../../src/graphQL/typeDefs';
-import resolvers from '../../src/graphQL/resolvers';
-import TopicAPI from '../../src/graphQL/dataSources/topic_API_MongoDB';
-import { NotificationModel, TopicModel } from '../../src/graphQL/dataSources/model';
-import mongoose from 'mongoose';
-import ArtsAPI from '../../src/graphQL/dataSources/art_API';
-import HotEventAPI from '../../src/graphQL/dataSources/hotEvent_API_MongoDB';
-import { HotEventModel } from '../../src/graphQL/dataSources/model';
-import NotificationAPI from '../../src/graphQL/dataSources/notification_API_MongoDB';
+import {ApolloServer} from "apollo-server"
+import {typeDefs} from "../../src/graphQL/typeDefs";
+import resolvers from "../../src/graphQL/resolvers";
+import TopicAPI from "../../src/graphQL/dataSources/topic_API_MongoDB";
+import { NotificationModel, TopicModel } from "../../src/graphQL/dataSources/model";
+import mongoose from "mongoose";
+import ArtsAPI from "../../src/graphQL/dataSources/art_API";
+import HotEventAPI from "../../src/graphQL/dataSources/hotEvent_API_MongoDB";
+import { HotEventModel } from "../../src/graphQL/dataSources/model";
+import NotificationAPI from "../../src/graphQL/dataSources/notification_API_MongoDB";
 const dataSources = ()=>(
     {
         topicsAPI: new TopicAPI(TopicModel),
@@ -23,7 +23,7 @@ const main = async () => {
   await mongoose.connect(uri)
 };
 main()
-  .then(()=>{console.log('🎉 connected to database successfully')})
+  .then(()=>{console.log("🎉 connected to database successfully")})
   .catch(error => console.error(error));
 
 
@@ -35,7 +35,7 @@ const server = new ApolloServer({
 });
 
 server.listen().then(()=>{
-    console.log(`Hi am listening`)
+    console.log("Hi am listening")
 
 })
 // server.listen({ port: 4000 }).then(({ url }) => {

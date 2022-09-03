@@ -2,7 +2,7 @@ import { MDBIcon } from "mdbreact";
 import { useRouter } from "next/router";
 import React, { FunctionComponent, useContext, useState } from "react";
 import { useNotification } from "../../ultility/NotiContext";
-import styles from './ClientOption.module.css'
+import styles from "./ClientOption.module.css"
 import { NumOfNewNoti } from "./styled";
 
 const ClientOption: FunctionComponent<{

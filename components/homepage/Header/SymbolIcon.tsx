@@ -1,6 +1,6 @@
 import React from "react"
-import styles from './SymbolIcon.module.css'
-import logoImg from '../../../public/logoImg.png'
+import styles from "./SymbolIcon.module.css"
+import logoImg from "../../../public/logoImg.png"
 import { useRouter } from "next/router"
 const SymbolIcon = ()=>{
     const router= useRouter();

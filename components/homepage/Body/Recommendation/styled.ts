@@ -55,7 +55,7 @@ export const NameOfSingleItem = styled.div`
 `
 
 export const AdditionalSale = styled.div<SingleItemProps>`
-    ${(props)=>(props.onAdditionalSale && 'background-color : orange;')}
+    ${(props)=>(props.onAdditionalSale && "background-color : orange;")}
     height : 20px;
     width : 20%;
     margin-bottom :  5px;

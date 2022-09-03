@@ -1,7 +1,7 @@
-import {gql} from '@apollo/client'
-import { useQuery } from '@apollo/client';
-import { useEffect, useState } from 'react';
-import { SingleNotificationContainer, SingleNotificationTextContainer } from './styled';
+import {gql} from "@apollo/client"
+import { useQuery } from "@apollo/client";
+import { useEffect, useState } from "react";
+import { SingleNotificationContainer, SingleNotificationTextContainer } from "./styled";
 export const GET_NOTIS = gql`
 query{
     getNotification{

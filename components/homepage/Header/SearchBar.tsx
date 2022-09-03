@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { MDBCol, MDBIcon } from "mdbreact";
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
 import { useState } from "react";
 import { SearchBarTopicsContainer, SingleTopicContainer } from "./styled";
 import { gql,useQuery } from "@apollo/client";

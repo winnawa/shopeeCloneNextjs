@@ -1,12 +1,12 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css"
+import type { AppProps } from "next/app"
 import { ApolloClient, ApolloProvider, InMemoryCache, HttpLink, from } from "@apollo/client";
-import {onError} from '@apollo/client/link/error'
-import NotiContextComponent from '../components/ultility/NotiContext';
+import {onError} from "@apollo/client/link/error"
+import NotiContextComponent from "../components/ultility/NotiContext";
 
 
 const httpLink = new HttpLink({
-  uri: 'http://localhost:4000',
+  uri: "http://localhost:4000",
 })
 const errorLink = onError(({ graphQLErrors, networkError }) => {
   if (graphQLErrors)
@@ -17,7 +17,7 @@ const errorLink = onError(({ graphQLErrors, networkError }) => {
 })
 
 const client = new ApolloClient({
-    //uri: 'http://localhost:4000/',
+    //uri: "http://localhost:4000/",
     link : from ([errorLink,httpLink]),
     cache: new InMemoryCache(),
 });

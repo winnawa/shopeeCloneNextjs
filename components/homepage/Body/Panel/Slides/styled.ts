@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 interface SlideProps{
     imgURL : String,
@@ -28,6 +28,6 @@ export const CircleInTheSlide = styled.div<CircleProps>`
     border-radius: 50% ;
     background-color: white;
     margin : 0px 10px 0px 10px;
-    ${   (props) =>( !props.active && 'opacity:0.6;') }
+    ${   (props) =>( !props.active && "opacity:0.6;") }
 
 `

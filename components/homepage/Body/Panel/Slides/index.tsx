@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react"
-// import styles from './Slides.module.css'
-import {Container, CircleInTheSlide} from './styled';
+// import styles from "./Slides.module.css"
+import {Container, CircleInTheSlide} from "./styled";
 
 const Slides = ()=>{
     const slides = [{
@@ -47,7 +47,7 @@ const Slides = ()=>{
 
     return(
         <Container imgURL={slides[currentPosInSlides].url}>
-            <div style={{position:'absolute', width:'100%',height:'35px',display:"flex",justifyContent:"center", bottom:'0px' }}>
+            <div style={{position:"absolute", width:"100%",height:"35px",display:"flex",justifyContent:"center", bottom:"0px" }}>
                 {circlesInTheSlides}
             </div>
         </Container>

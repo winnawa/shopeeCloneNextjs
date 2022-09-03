@@ -1,4 +1,3 @@
-
 import { useRouter } from "next/router"
 import React, { useEffect, useState } from "react"
 import { PaintingContainer,CategoryHeader, SinglePainting,ImgContainer,NameContainer,LeftButton,RightButton } from "./styled"
@@ -155,7 +154,7 @@ const FlashSale = ()=>{
     }
 
     const paintingArrayDisplayed = paintingArray.map((element,index)=>{
-        //console.log('MAP',categoryActivated)
+        //console.log("MAP",categoryActivated)
         const satisfiedNumCategory = currentPageHasEnoughCategories(numOfCategoiesOnAPage,currentPage);
         if (satisfiedNumCategory){
             const minPos = numOfCategoiesOnAPage*currentPage;

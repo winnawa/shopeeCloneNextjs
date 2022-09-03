@@ -130,7 +130,7 @@ const Category = ()=>{
     }
 
     const categoriesArrayDisplayed = categoriesArray.map((element,index)=>{
-        //console.log('MAP',categoryActivated)
+        //console.log("MAP",categoryActivated)
         const satisfiedNumCategory = currentPageHasEnoughCategories(numOfCategoiesOnAPage,currentPage);
         if (satisfiedNumCategory){
             const minPos = numOfCategoiesOnAPage*currentPage;
