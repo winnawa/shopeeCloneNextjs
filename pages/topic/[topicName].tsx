@@ -17,7 +17,7 @@ const SingleTopicComponent = ()=>{
         <SingleTopicPageContainer>
             <Header></Header>
 
-            <Parallax pages={1.9} >
+            {/* <Parallax pages={1.9} >
                 <ParallaxLayer offset={0} factor={1.9} speed={0.2} >    
                     <BackgroundImgCenterBox>
                         <BackgroundImgContainer imgURL={imgLink}>SCROLL  DOWN </BackgroundImgContainer>
@@ -34,7 +34,17 @@ const SingleTopicComponent = ()=>{
                 </ParallaxLayer>
 
             
-            </Parallax>
+            </Parallax> */}
+                    <BackgroundImgCenterBox>
+                        <BackgroundImgContainer imgURL={imgLink}>SCROLL  DOWN </BackgroundImgContainer>
+                    </BackgroundImgCenterBox>
+                    <TextCenterBox>
+                       <TextBackGroundAndSizeColorBox>
+                           <TextContainer> Welcome to {topicName} !!!</TextContainer>
+                           <TextContainer>Here we use <span style={{fontStyle:"italic"}}>parallax effect</span> to elaborate our page, this page has no other utilities, thank you.</TextContainer>
+                           <TextContainer>Have a good day.</TextContainer>
+                       </TextBackGroundAndSizeColorBox>
+                   </TextCenterBox>
         </SingleTopicPageContainer>
     )
 }
