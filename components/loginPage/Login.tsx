@@ -1,7 +1,7 @@
 import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth"
 import { app } from "../../src/firebase/firebase"
 import React, { useEffect, useState } from "react";
-import {Parallax,ParallaxLayer} from "@react-spring/parallax"
+//import {Parallax,ParallaxLayer} from "@react-spring/parallax"
 import { Button, FlexContainer, ImgContainer, TextBackGroundAndSizeColorBox, TextCenterBox, TextContainer } from "./styled";
 import { useRouter } from "next/router";
 const LoginComponent = ()=>{
